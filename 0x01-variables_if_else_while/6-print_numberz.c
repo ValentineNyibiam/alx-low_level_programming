@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * C program to print numbers in base 10 
+ * C program to print numbers in base 10
  * Using the putchar functions
  * Return: 0 (Success)
  */
