@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_stcpy - Copies a string to the buffer
+ * *_strcpy - Copies a string to the buffer
  * @src: Where string is copied from
  * @dest: Where copied string is pasted to
  * Return: dest
