@@ -7,7 +7,7 @@
 void puts_half(char *str)
 {
 	int c;
-	int n;
+	int v;
 	int length_of_the_string = 0;
 
 	for (c = 0; str[c] != '\0'; c++)
@@ -16,19 +16,19 @@ void puts_half(char *str)
 	if (length_of_the_string % 2 == 1)
 	{
 		n = (length_of_the_string - 1) / 2;
-		while (str[n] != '\0')
+		while (str[v] != '\0')
 		{
-			_putchar(str[n]);
-			n++;
+			_putchar(str[v]);
+			v++;
 		}
 	}
 	else
 	{
-		n = length_of_the_string / 2;
-		while (str[n] != '\0')
+		v = length_of_the_string / 2;
+		while (str[v] != '\0')
 		{
-			_putchar(str[n]);
-			n++;
+			_putchar(str[v]);
+			v++;
 		}
 	}
 	_putchar('\n');
