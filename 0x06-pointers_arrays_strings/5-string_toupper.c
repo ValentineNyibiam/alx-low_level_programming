@@ -11,7 +11,7 @@ char *string_toupper(char *inp)
 
 	for (i = 0; inp[i] != '\0'; i++)
 	{
-		if (inp[i] > 97 && inp[i] < 90)
+		if (inp[i] >= 97 && inp[i] <= 122)
 		{
 			inp[i] -= 32;
 		}
