@@ -30,6 +30,5 @@ int **alloc_grid(int width, int height)
 		for (j = 0; j < width; j++)
 			twoarray[i][j] = 0;
 	}
-
 	return (twoarray);
 }
