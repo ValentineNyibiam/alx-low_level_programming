@@ -30,6 +30,6 @@ int main(int argc, char *argv[])
 		}
 		res += atoi(argv[x]);
 	}
-	printf("%d", res);
+	printf("%d\n", res);
 	return (0);
 }
