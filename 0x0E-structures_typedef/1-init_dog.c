@@ -13,10 +13,10 @@
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	struct dog **e;
-	
+
 	e = malloc(sizeof(struct dog));
 	if (e == NULL)
-		printf("Failed");
+		return;
 	e = &d;
 	(**e).name = name;
 	(**e).age = age;
