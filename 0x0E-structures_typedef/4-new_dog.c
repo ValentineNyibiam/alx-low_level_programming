@@ -4,11 +4,11 @@
 
 /**
  * *new_dog - creates a new dog
- * @name: input of string type
- * @age: input of integer type
- * @owner: input of string type
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of dog
  *
- * Return: a pointer to a struct dog type
+ * Return: a pointer to a struct dog type (success), otherwise NULL
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
