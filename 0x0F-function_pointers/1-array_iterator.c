@@ -2,8 +2,9 @@
 
 /**
  * array_iterator - executes a function given as a parameter
- * @array: a pointer to the function to be executed
+ * @array: an array of integers
  * @size: size of the array
+ * @action: a pointer to the function to be executed
  *
  * Return: nothing
  */
