@@ -1,10 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* standard header files */
-#include <stddef.h>
-
-/* prototypes */
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
