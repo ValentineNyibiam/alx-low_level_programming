@@ -16,7 +16,8 @@ char *_strdup(char *str)
 		return (NULL);
 
 	/*check for the length of the string */
-	for (; str[str_length] != '\0'; str_length++);
+	for (; str[str_length] != '\0'; str_length++)
+		;
 
 	/* allocate memory dynamically */
 	str_malloc = malloc(str_length * sizeof(char) + 1);
@@ -30,5 +31,5 @@ char *_strdup(char *str)
 		str_malloc[i] = str[i];
 	str_malloc[i] = '\0';
 
-	return(str_malloc);
+	return (str_malloc);
 }
