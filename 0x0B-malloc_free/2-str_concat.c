@@ -13,8 +13,10 @@ char *str_concat(char *s1, char *s2)
 	char *alloc_mem;
 
 	/* check if s1 or s2 is NULL */
-	if (s1 == NULL || s2 == NULL)
-		return (NULL);
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
 	/* find the length of both strings */
 	str_len1 = _strlen(s1);
