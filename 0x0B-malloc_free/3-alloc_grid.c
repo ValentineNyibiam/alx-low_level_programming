@@ -23,7 +23,10 @@ int **alloc_grid(int width, int height)
 
 	/* check if memory allocation is successful */
 	if (alloc_mem == NULL)
+	{
+		free(alloc_mem);
 		return (NULL);
+	}
 
 	/* intialize each element of the grid to 0 */
 	for (i = 0; i < height; i++)
