@@ -34,7 +34,8 @@ int **alloc_grid(int width, int height)
 		alloc_mem[i] = malloc(sizeof(**alloc_mem) * width);
 		if (alloc_mem[i] == NULL)
 		{
-			free(alloc_mem[i]);
+			for (i--; i >= 0; i--)
+				free(alloc_mem[i]);
 			free(alloc_mem);
 			return (NULL);
 		}
