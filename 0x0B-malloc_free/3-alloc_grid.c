@@ -15,7 +15,7 @@ int **alloc_grid(int width, int height)
 	int **alloc_mem;
 
 	/* check if width or height is less than zero */
-	if (width < 0 || height < 0)
+	if (width < 1 || height < 1)
 		return (NULL);
 
 	/* allocate memory for the 2d array */
