@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * *string_nconcat - concatenates two strings
@@ -23,7 +22,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	if (n >= str_len2) /* account for edge cases of n */
+	if (n_edge <= 0) /* account for edge cases of n */
+		return(NULL);
+	if (n_edge >= str_len2)
 		n_edge = str_len2;
 
 	mem_to_alloc = str_len1 + n_edge + 1; /* allocate memory dynamically */
