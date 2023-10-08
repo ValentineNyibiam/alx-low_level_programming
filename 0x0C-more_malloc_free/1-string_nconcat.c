@@ -32,15 +32,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (alloc_mem == NULL) /* check if allocation was successful */
 		return (NULL);
 
-	for (i = 0, j = 0; i < mem_to_alloc; i++) /* initialize allocated memory */
-	{
-		if (i < str_len1)
-			alloc_mem[i] = s1[i];
-		else
-		{
-			alloc_mem[i] = s2[j++];
-		}
-	}
+	for (i = 0; i < str_len1; i++) /* initialize allocated memory */
+		alloc_mem[i] = s1[i];
+	for (j = 0; j < n_edge; j++, i++)
+		alloc_mem[i] = s2[j];
 	alloc_mem[i] = '\0';
 
 	return (alloc_mem);
