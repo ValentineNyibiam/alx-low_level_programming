@@ -23,7 +23,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 
 	if (n_edge <= 0) /* account for edge cases of n */
-		return(NULL);
+		return (NULL);
 	if (n_edge >= str_len2)
 		n_edge = str_len2;
 
@@ -49,9 +49,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
  *
  * Return: the length of the string
  */
-int _strlen(char *str)
+unsigned int _strlen(char *str)
 {
-	int i;
+	unsigned int i;
 
 	for (i = 0; str[i] != '\0'; i++)
 		;
