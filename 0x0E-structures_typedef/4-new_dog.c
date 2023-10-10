@@ -52,7 +52,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 	namelen = _strlen(name) + 1;
 	ownerlen = _strlen(owner) + 1;
 
-	/* allocate memory for name, owner and new_dog, then check if allocation is successful */
+	/**
+	 * allocate memory for name, owner and new_dog,
+	 * then check if allocation is successful
+	 */
 	new_dog = malloc(sizeof(dog_t));
 	if (new_dog == NULL)
 		return (NULL);
