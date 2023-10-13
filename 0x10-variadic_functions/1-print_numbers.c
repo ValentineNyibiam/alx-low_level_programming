@@ -4,7 +4,8 @@
  * print_numbers - Prints numbers followed by a new line
  * @seperator: A pointer to the string to be printed
  * between the printed numbers
- * @n: the number of numbers passed to the function
+ * @n: The number of numbers passed to the function
+ * @...: The variable arguments passed to the function
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
