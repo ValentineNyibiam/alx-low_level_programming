@@ -5,6 +5,7 @@
  * @seperator: A pointer to the string to be printed
  * between the printed strings
  * @n: the number of strings passed to the function
+ * @...: The variable arguments to be passed to the function
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
