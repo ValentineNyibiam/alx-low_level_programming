@@ -2,7 +2,7 @@
 
 /**
  * print_strings - Prints strings followed by a new line
- * @seperator: A pointer to the string to be printed
+ * @separator: A pointer to the string to be printed
  * between the printed strings
  * @n: the number of strings passed to the function
  * @...: The variable arguments to be passed to the function
