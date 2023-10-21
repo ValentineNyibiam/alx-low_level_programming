@@ -26,7 +26,7 @@ void print_all(const char * const format, ...)
 			case 'i':
 				printf("%d", va_arg(args, int));
 				break;
-			
+
 			case 'f':
 				printf("%f", va_arg(args, double));
 				break;
@@ -42,10 +42,37 @@ void print_all(const char * const format, ...)
 				i++;
 				continue;
 		}
-		if (format[i + 1] && (format[i] == 'c' || format[i] == 's' || format[i] == 'f' || format[i] == 'i'))
-			printf(", ");
+		if (format[i + 1])
+			print_separator(format[i]);
 		i++;
 	}
 	putchar ('\n');
 	va_end(args);
+}
+
+/**
+ * print_separator - Prints a sepatator to the stdout
+ * based on a condition
+ * @chr: Character that when encountered a separator
+ * wil be printed to stdout
+ */
+void print_separator(char chr)
+{
+	switch (chr)
+	{
+		case 'c':
+			printf(", ");
+			break;
+		case 's':
+			printf(", ");
+			break;
+		case 'f':
+			printf(", ");
+			break;
+		case 'i':
+			printf(", ");
+			break;
+		default:
+			return;
+	}
 }
