@@ -8,19 +8,17 @@
  */
 int pop_listint(listint_t **head)
 {
-	int i = 1;
-	listint_t *current;
-
-	if (*head == NULL)
+	listint_t *temp = *head;
+	int num = temp->n;
+	
+	/* Check if head is null */
+	if (temp == NULL)
 		return (0);
+	
+	/* Remove the head node */
+	*head = temp->next;
 
-	while (i < 2)
-	{
-		current = *head;
-		*head = (*head)->next;
-		i++;
-	}
-	*head = current->next;
+	free(temp);
 
-	return (current->n);
+	return (num);
 }
