@@ -9,13 +9,14 @@
 int pop_listint(listint_t **head)
 {
 	listint_t *temp = *head;
-	int num = temp->n;
-	
+	int num;
+
 	/* Check if head is null */
 	if (temp == NULL)
 		return (0);
-	
+
 	/* Remove the head node */
+	num = temp->next;
 	*head = temp->next;
 
 	free(temp);
