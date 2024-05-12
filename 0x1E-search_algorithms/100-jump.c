@@ -30,7 +30,7 @@ int jump_search(int *array, size_t size, int value)
 			printf("%s [%ld] and [%ld]\n", output, blockMin, blockMx);
 			while (blockMin <= blockMx)
 			{
-				printf("Value checked array[%ld] = [%ld]\n", blockMin, blockMin);
+				printf("Value checked array[%ld] = [%d]\n", blockMin, array[blockMin]);
 				if (array[blockMin] == value)
 					return (blockMin);
 				blockMin++;
