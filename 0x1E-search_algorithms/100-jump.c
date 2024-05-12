@@ -40,8 +40,8 @@ int jump_search(int *array, size_t size, int value)
 		}
 		else
 		{
-			blockMin += 3;
-			blockMx += 3;
+			blockMin += jump_step;
+			blockMx += jump_step;
 		}
 		index++;
 	}
