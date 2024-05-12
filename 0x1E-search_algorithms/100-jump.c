@@ -18,6 +18,9 @@ int jump_search(int *array, size_t size, int value)
 	size_t blockMx = jump_step;
 	char *output;
 
+	if (!array)
+		return (-1);
+
 	while (index < jump_step + 1)
 	{
 		printf("Value checked array[%ld] = [%ld]\n", blockMin, blockMin);
