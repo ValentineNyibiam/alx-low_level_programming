@@ -24,7 +24,7 @@ int jump_search(int *array, size_t size, int value)
 	while (1)
 	{
 		printf("Value checked array[%lu] = [%d]\n", blockMin, array[blockMin]);
-		if ((blockMx <= max && value <= array[blockMx]) || blockMx > size)
+		if ((blockMx <= max && value <= array[blockMx]) || blockMx >= size)
 		{
 			output = "Value found between indexes";
 			printf("%s [%lu] and [%lu]\n", output, blockMin, blockMx);
