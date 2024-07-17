@@ -15,11 +15,11 @@ effeciency and curtail code redundancy.
 - [Serach Algorithms video playlist](https://www.youtube.com/playlist?list=PLEJXowNB4kPwTb4BivkY0dENHmXdOEM3V)
 
 ## Folder Details ###
-- **Date Created:** May 7, 2024.
+- **Date Created:** July 17, 2024.
 - **Author:** 
 	- [Valentine Nyibiam](https.//github.com/ValentineNyibiam)
 - **Project Timeline:**
-  - **Released:** May 6, 2024 - 6am.
-  - **1st Deadline:** May 9, 2024 - 6am.
+  - **Released:** July 15, 2024 - 6am.
+  - **1st Deadline:** July 17, 2024 - 6am.
   - **Duration:** 3 days.
   - **Month** 7, **Week** 1.
